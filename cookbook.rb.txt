@@ -1,0 +1,16 @@
+name:chef_zero
+always_update_cookbooks:true
+product_name:chef
+product_version:14
+verifier:
+name inspec
+platforms:
+-name ubuntu-18.04
+Suites:
+-name:default
+  run_list:
+-	receipe[apache::default]
+ verifier:
+    inspec_tests:
+-	test/integration/default
+attributes:

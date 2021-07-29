@@ -1,0 +1,25 @@
+name:chef_zero
+
+#you may wish to disable always updating cookbooks oin CI or other testing environments.
+#for example:
+#always_update_cookbooks:<%= !ENV['CI']%>
+
+always_update_cookbooks: true
+product_name:chef
+product_version:14
+
+verifier:
+- name:inspec
+
+Platforms:
+- name:ubuntu-18.04
+
+suites:
+
+-name: default
+ run_list:
+  - recipe[apache::default]
+ verifier:
+ inspec_tests:
+  -test/integration/default
+ attributes:

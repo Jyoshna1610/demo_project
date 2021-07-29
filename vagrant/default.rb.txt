@@ -1,0 +1,13 @@
+package "make" do
+action:nothing
+end.run_action(:install)
+chef_gem 'chef-handler-jenkins'
+require 'chef/handler/jenkins'
+
+execute "apt-get update" do
+  command "apt-get update"
+  action :run
+end
+
+#Add our jenkins installation as an end point
+
