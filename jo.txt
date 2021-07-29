@@ -1,0 +1,3 @@
+Jyoshna did a very good job in setting up the AWS VDI with code automation, build, deployment and push the repo to AWS EC2 instance using Jenkins pipeline. Now she is working on chef runbooks for configuration management automation. This is commendable and show her learning skills and capabilities to work on hard problems. This helped to showcase the automation possibilities in app remediation to leadership at onshore. Most of the work jyoshna did can be reusable for all the future replatform applications which project plan to implement.
+
+She is also helping leadership on automation of incidents, change details from a4c (myNav or accelerate for cloud) to service now and vice versa.
